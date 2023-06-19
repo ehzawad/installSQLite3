@@ -116,7 +116,7 @@ $ echo $?
 ```
 
 
-### Interactive
+### Interactive into the container
 
 Running  the container as shell and then run sqlite3 or whatever alpine would support; and as `-w workspace`; this will lead to CLI in the workspace directory
 
