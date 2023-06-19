@@ -115,6 +115,15 @@ $ echo $?
 0
 ```
 
+
+### Interactive
+
+Running  the container as shell and then run sqlite3 or whatever alpine would support; and as `-w workspace`; this will lead to CLI in the workspace directory
+
+```shellsession
+$ docker run --rm -it -v "$(pwd):/workspace" -w /workspace keinos/sqlite3 bash
+```
+
 [Let us know](https://github.com/KEINOS/Dockerfile_of_SQLite3/issues) if you have any test to be included.
 
 ## ToDo
